@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Share", sans-serif;
+}
+
+body {
+    margin: 80px auto;
+    max-width: 1440px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: #D9D9D9;
+    width: 800px;
+    height: auto;
+    margin: 0 auto;
+    padding: 40px 0;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header img {
+    height: 32px;
+    margin: 0 8px;
+}
+
+header h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+form {
+    display: flex;
+    max-width: 500px;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+#nomeAtividade {
+    width: 250px;
+    height: 36px;
+    font-size: 16px;
+    padding-left: 8px;
+}
+
+#notaAtividade {
+    width: 100px;
+    height: 36px;
+    font-size: 16px;
+    padding-left: 8px;
+}
+
+#enviar {
+    width: 100px;
+    height: 36px;
+    font-size: 16px;
+    background-color: #00FF1A;
+    border: 1px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+table {
+    max-width: 500px;
+    width: 100%;
+}
+
+tr {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#tNome,
+#tMediaNome {
+    width: 250px;
+    height: 20px;
+    margin: 8px 0;
+}
+
+#tNota,
+#tAprovado,
+#tMediaFinal,
+#tResultado {
+    width: 100px;
+    height: 20px;
+    margin: 8px 0;
+}
+
+table img {
+    width: 20px;
+}
+
+#tIndice {
+    border-bottom: 2px solid black;
+}
+
+#tMedia {
+    border-top: 2px solid black;
+}
+
+.aprovado {
+    color: #00FF1A;
+    text-shadow: 1px 1px black;
+}
+
+.reprovado {
+    color: red;
+    text-shadow: 1px 1px black;
+}

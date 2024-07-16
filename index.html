@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de médias</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./images/logo.png" alt="capelo e diploma">
+            <h1>Calculadora de médias</h1>
+            <img src="./images/logo.png" alt="capelo e diploma">
+        </header>
+
+        <form id="formAtividade">
+            <input id="nomeAtividade" type="text" required placeholder="Nome da atividade"/>
+            <input id="notaAtividade" type="number" required placeholder="Nota(0~10)" min="0" max="10"/>
+            <button id="enviar" type="submit">+ Adicionar</button>
+        </form>
+
+        <table cellspacing="0">
+            <thead>
+                <tr id="tIndice">
+                    <th id="tNome">Nome da atividade</th>
+                    <th id="tNota">Nota</th>
+                    <th id="tAprovado">Aprovado?</th>
+                </tr>
+            </thead>
+
+            <tbody> 
+            </tbody>
+
+            <tfoot>
+                <tr id="tMedia">
+                    <td id="tMediaNome">Média final:</td>
+                    <td id="tMediaFinal">---</td>
+                    <td id="tResultado" maxlength="4"><span class="resultado aprovado">---</span></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <script src="/main.js"></script>
+</body>
+</html>
